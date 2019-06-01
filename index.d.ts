@@ -22,4 +22,4 @@ export interface SwaggerTag {
     description: string;
 }
 
-export function createSwaggerPage(options: SwaggerPageOptions): void;
+export function createSwaggerPage(options: SwaggerPageOptions): Object;
