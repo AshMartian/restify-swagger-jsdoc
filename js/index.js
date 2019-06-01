@@ -69,6 +69,8 @@ function createSwaggerPage(options) {
             return next();
         });
     });
+    
+    return swaggerSpec;
 }
 exports.createSwaggerPage = createSwaggerPage;
 exports.default = { createSwaggerPage };
