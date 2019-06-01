@@ -27,7 +27,7 @@ interface SwaggerTag {
     description: string;
 }
 
-export function createSwaggerPage(options: SwaggerPageOptions): void {
+export function createSwaggerPage(options: SwaggerPageOptions): Object {
     if (!options.title) {
         throw new Error('options.title is required');
     } else if (!options.version) {
@@ -102,6 +102,8 @@ export function createSwaggerPage(options: SwaggerPageOptions): void {
             return next();
         });
     });
+    
+    return swaggerSpec;
 }
 
 // tslint:disable-next-line:export-name
